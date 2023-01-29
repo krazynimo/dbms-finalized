@@ -11,3 +11,4 @@ Route::get('/', function () {
 
 
 Route::get('search', 'App\Http\Controllers\SearchController@search')->name('search');
+Route::get('results', 'App\Http\Controllers\SearchController@search_result')->name('results');

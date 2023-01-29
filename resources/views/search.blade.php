@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{route('search')}}" method="GET">
+    <form action="{{route('results')}}" method="GET">
     <div class="form-group">
         <label for="customers">Customers Fields</label>
         <select name="customers" id="customers" class="form-control">
