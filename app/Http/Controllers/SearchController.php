@@ -39,10 +39,7 @@ class SearchController extends Controller
         $query = Customers::query();
         $results = $query->get();
         $response['output'] = $results;
-
-
-        // dump($results->toArray());
-
+        
         return json_encode($response);
         $query = Customers::query();
 
