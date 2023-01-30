@@ -33,6 +33,17 @@ class SearchController extends Controller
 
     public function search_result(Request $request)
     {
+        $response = array();
+        $response['input'] = $request->all();
+        // find all customers
+        $query = Customers::query();
+        $results = $query->get();
+        $response['output'] = $results;
+
+
+        // dump($results->toArray());
+
+        return json_encode($response);
         $query = Customers::query();
 
         // Check if the product attribute is selected
